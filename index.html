@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Table</title>
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/gridjs-jquery/dist/gridjs.development.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+    />
+  </head>
+  <body>
+    <h1>
+      Table Example
+    </h1>
+    <div id="wrapper"></div>
+
+    <script>
+      $("div#wrapper").Grid({
+        search: true,
+        pagination: true,
+        sort: true,
+        columns: ["Name", "Age", "Email"],
+        data: [
+          ["John", 25, "john@k.com"],
+          ["Mark", 59, "mark@e.com"]
+          // ...
+        ]
+      });
+    </script>
+  </body>
+</html>
